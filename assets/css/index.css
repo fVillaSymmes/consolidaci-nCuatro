@@ -1,0 +1,59 @@
+body {
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.dotPink {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: salmon;
+}
+
+.dotGreen {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: #90ee90;
+}
+
+.dotBlue {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: #87cefa;
+}
+
+.seccion-cards {
+    min-height: 10vh;
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1rem;
+    padding: 3rem;
+    border-left: solid 3px #eaeaea;
+  
+    transition: min-height 4s ease;
+  }
+  
+  .seccion-cards::before {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #f1c40f;
+    border-radius: 100%;
+    top: 50%;
+    left: -1.5px;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    .etiqueta {
+      align-items: center;
+      justify-content: center;
+      width: 8rem;
+    }
+  }
+
